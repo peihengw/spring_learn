@@ -11,7 +11,6 @@ public class Student {
     private String id;
     private String name;
     private String age;
-    private String sex;
 
     public String getId() {
         return id;
@@ -37,11 +36,12 @@ public class Student {
         this.age = age;
     }
 
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                '}';
     }
 }

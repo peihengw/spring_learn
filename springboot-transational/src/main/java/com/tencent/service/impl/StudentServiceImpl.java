@@ -23,15 +23,16 @@ public class StudentServiceImpl implements StudentService {
 
 
     /**
-     * @Transactional： 标识方法有事务支持
+     *
      *默认：
      *      隔离级别：使用库的隔离级别
-     *      传播行为：REQUIRE
+     *      传播行为：REQUIRED
      *      超时时间：-1
      *跑出运行时一次就会回滚事务
      * @param student
      * @return
      */
+    //@Transactional： 标识方法有事务支持
     @Transactional
     public int addStudent(Student student) {
 
