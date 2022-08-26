@@ -1,5 +1,7 @@
 package com.tencent.model;
 
+import java.io.Serializable;
+
 /**
  * @Project:spring_learn
  * @ClassName:Employee
@@ -7,7 +9,7 @@ package com.tencent.model;
  * @Date:2022/8/2
  * @Description:TODO
  */
-public class Employee {
+public class Employee implements Serializable {
 
     private Integer id;
 
