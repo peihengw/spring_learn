@@ -25,7 +25,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Cacheable
     @Override
-    public Employee getEmp(Integer id) {
+    public Employee getEmp(Integer id,String ab) {
         return employeeMapper.getEmpById(id);
 
     }

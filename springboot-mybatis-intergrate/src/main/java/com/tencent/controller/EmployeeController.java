@@ -22,9 +22,9 @@ public class EmployeeController {
     @Resource
     private EmployeeService employeeService;
 
-    @GetMapping("/emp/{id}")
-    public Employee getEmp(@PathVariable Integer id){
-        Employee emp = employeeService.getEmp(id);
+    @GetMapping("/emp/{id}/{ab}")
+    public Employee getEmp(@PathVariable Integer id,@PathVariable String ab){
+        Employee emp = employeeService.getEmp(id, ab);
 
         return emp;
     }
